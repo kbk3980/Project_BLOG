@@ -1,19 +1,56 @@
-h1{
+@font-face {
+    font-family: 'KyoboHandwriting2021sjy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ansungtangmyun-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/Ansungtangmyun-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+    font-family:'KyoboHandwriting2021sjy';
+    color: white;
     text-align: center;
     margin-bottom: 200px;
     margin-top: 70px;
+    font-size: 46px;
 }
 
-p {
-    text-align: center;
-    font-size: 32px; 
+li {   
+    font-family:'Ansungtangmyun-Bold';
+    font-size: 36px; 
     font-weight: 500; /*글꼴 크기*/
-    margin: 30px;
+    text-align: left; 
+    margin: 30px auto;   /* width: 25%;   먼가 이상함 -> 여기 고쳐야댐 확대 축소 라인 안맞음 그렇다고 왼쪽 고정 안됨  */
 }
+
+li {list-style: none;}
+
+ul {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 body {
     background-image: url('./traverl1.png');
     background-size: cover;
 }
 
-a { text-decoration:none } /*밑줄 없앰 */ 
+a{
+    text-decoration: none; 
+    color:white;
+}
+
+footer {
+     color:white;
+     text-align: center; 
+     font-size: 1.2rem; 
+     margin-top:30px;
+    }
