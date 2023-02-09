@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    margin-bottom: 200px;
+    margin-top: 70px;
+}
+
+p {
+    text-align: center;
+    font-size: 32px; 
+    font-weight: 500; /*글꼴 크기*/
+    margin: 30px;
+}
+
+body {
+    background-image: url('./traverl1.png');
+    background-size: cover;
+}
+
+a { text-decoration:none } /*밑줄 없앰 */ 
