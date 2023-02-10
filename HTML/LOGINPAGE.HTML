@@ -14,37 +14,41 @@
     </header>
     </div>
     <main id="login_bar">
-        <form action="#" method="post" id="loginFrm">
+        <form action="#" method="post" id="loginfrm"> <!-- form 속성="속성값" action은 태그안의 내용을 처리해 줄 서버 프로그램 지정 method은 사용자가 입력한 내용을 서버 쪽 프로그램으로  넘겨줄것인지 지정 get,post-->
             <fieldset>
-                <legend class="skip"></legend>
-                <ul>
+                <legend class="login_Form"> 로그인 양식 </legend>  <!-- 로그인 양식 login_form 지정-->
+                <ul>                                        
                     <li>
                         <span class="id_bg"><!--배경이미지(메일 아이디)--></span>
-                        <span><input type="text" name="user_id" placeholder="아이디(이메일)"></span>
+                        <span><input type="text" name="user_id" placeholder="아이디를 입력하세용" required></span> <!--placeholder 쓰는게 적절한값 쓰게 하는게 나을듯?-->
                     </li>
-                    <li class="error id_error">아이디를 입력해주세요.</li>
+                    <li class="error id_error">아이디를 입력해주세요.</li> <!--아이디 입력or형식 어긋날시 경고 넣을려고 씀-->                                          
                     <li>
                         <span class="pw_bg"><!--배경이미지(비밀번호)--></span>
-                        <span><input type="password" name="user_pw" placeholder="비밀번호"></span>
+                        <span><input type="password" name="user_pw" placeholder="비밀번호를 입력하세용" required></span>
                         <span class="pw_show_hide" title="문자보이기"></span>
                     </li>
-                    <li class="error pw_error">비밀번호를 입력해주세요.</li>
+                    <li class="error pw_error">비밀번호를 입력해주세요.</li> <!--비밀번호 입력or형식 어긋날시 경고 넣을려고 씀-->
                 </ul>
-                <div class="btm">
+
+                <!--<div class="btm">
                     <p>
                         <label>
-                            <input type="checkbox" name="login_y" id="login_y">
+                            <input type="checkbox" name="login" id="login">
                             <span>자동로그인</span>
                         </label>
-                    </p>
-                    <a href="" class="idpw_search"> 아이디(이메일)/비밀번호 찾기</a>
-                </div>
-                <button type="submit" id="login_btn">로그인</button>
+                    </p>             고민중
+                </div> -->
+
+                <button type="submit" id="login_botton">로그인</button>   <!-- button type="submit" submit은 폼을 서버로 전송함.-->
+                <button type="submit" onclick="location.href='REGISTER.HTML'"id="register_botton">회원가입</button> 
+                <button type="submit" onclick="location.href='MAINPAGE.HTML'" id="register_botton" >취소</button> <!--버튼에 링크삽입 a href 안됨 onclick = "location.href = '#' " 넣기-->
             </fieldset>
         </form>
     </main>
     <footer>
-    </footer>
+        Design by kbk. Don't dwell on the past.
+   </footer> 
 </body>
 </html>
 
