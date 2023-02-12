@@ -24,12 +24,13 @@ ul {
 
 fieldset{
   margin-top: 50px;
+  padding: 0px;
   border: 0;
 }
 
 main #loginfrm fieldset ul li{
 
-  border: 3px solid red;
+  border: 3px solid black;
   background-color: white;
 
 }

@@ -10,7 +10,7 @@ h1{
 }
 
 
-ul{
+li{
     list-style: none;
 }
 
@@ -21,26 +21,25 @@ ul li {
 	clear:both;
 }
 
-.field {
-	float:left;
-	width:100px;
-	font-weight:bold;
-	font-size:0.9em;
-	line-height: 55px;
-	text-align:right;
-	margin-right:15px;
+.field{
+
 }
-input[type="text"], input[type="password"], input[type="email"] {
+
+input[type="text"], input[type="password"]{
 	float:left;
 	width:350px;
 	height:35px;
 	border:1px solid #aaa;
 	border-radius:5px;
 	padding:5px;
-	margin:10px 0;
+	margin:5px 0;
 	float:left;	
 }
 
+a{
+    text-decoration: none; 
+    color:black;
+}
 
 #sbutton > li {
 	display:inline-block;
@@ -60,3 +59,24 @@ footer {
 	font-size: 1.2rem; 
 	margin-top:30px;
    }
+
+
+ body #loginfrm ul li.error {
+    margin-top: 10px ;
+    color:#e7223d;
+    text-align: left;
+    display:none;
+    margin-left: 115px;
+}
+#user-info{
+    padding: 0px;
+}
+.field {
+	float:left;
+	width:100px;
+	font-weight:bold;
+	font-size:0.9em;
+	line-height: 55px;
+	text-align:right;
+	margin-right:15px;
+}
