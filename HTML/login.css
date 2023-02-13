@@ -9,21 +9,20 @@ h1{
 	margin:0 auto;
 }
 
+#container li{
+    display: flex;
+    list-style: none;
+}
 
 li{
     list-style: none;
 }
-
-input {
-    width: 500px;
-}
 ul li {
+    
 	clear:both;
 }
 
-.field{
 
-}
 
 input[type="text"], input[type="password"]{
 	float:left;
@@ -33,7 +32,7 @@ input[type="text"], input[type="password"]{
 	border-radius:5px;
 	padding:5px;
 	margin:5px 0;
-	float:left;	
+	text-indent: 10px;
 }
 
 a{
@@ -55,7 +54,7 @@ button {
 
 footer {
 	color: black;
-	text-align: center; 
+    text-align: center;
 	font-size: 1.2rem; 
 	margin-top:30px;
    }
@@ -80,3 +79,16 @@ footer {
 	text-align:right;
 	margin-right:15px;
 }
+
+div.accordion {
+    margin: 0 auto;
+}
+
+div.accordion li img{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 17px;
+    left: -30px;;
+}
+
