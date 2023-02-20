@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    header,
+    aside,
+    section,
+    footer {
+      border: solid 1px black;
+      width: 100%;
+      margin: 0px;
+      text-align: center;
+      font-size:30px;
+    }
+    body{
+        margin: 0;
+    }
+    header,
+    footer {
+      background-color: black;
+      color: white;
+    }
+    .container {
+      display: flex;
+      margin: 0 auto;
+    
+      border: solid 3px red;
+    }
+    #aisdeLeft {
+      flex-grow: 0;
+      background-color: darkseagreen;
+      width: 200px;
+    }
+    #section {
+      flex-grow: 1;
+      background-color: darkcyan;
+    }
+    #aisdeRight {
+      flex-grow: 0;
+      background-color: bisque;
+      width: 320px;
+    }
+    #article {
+      flex-grow: 1;
+      height: 800px;
+    }
+  </style>
+</head>
+ 
+<body>
+  <header id="header">#header</header>
+  <main id="main">
+    <div class="container">
+        <aside id="aisdeLeft">#asideLeft</aside>
+        <section id="section">
+          <article id="article">
+            <div id="article">#article</div>
+          </article>
+        </section>
+        <aside id="aisdeRight">#asideRight</aside>
+    </div>
+  </main>
+  <footer id="footer">#footer</footer>
+</body>
+</html>

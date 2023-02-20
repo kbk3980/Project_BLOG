@@ -1,0 +1,252 @@
+html, body {
+    margin: 0;
+    position: relative;
+    height: 100%;
+  }
+
+.blind{
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+
+#section{
+    width: 1000px;
+}
+
+
+#container {
+    position: relative;
+    width: 100%;
+}
+#header {
+    position: relative;
+    border-bottom: 3px solid gray;;
+}
+
+.in_header .btn_search {
+    right: 0px;
+}
+
+.in_header{
+    position: relative;
+    max-width: 1500px;
+    height: 160px;
+    margin: 0 auto;
+    text-align: center;
+}
+.in_header .btn_menu, .in_header .btn_search {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background: none;
+    color: #000;
+    cursor: pointer;
+    outline: none;
+    margin-top: -50px;
+}
+.in_header .btn_search .icon-search{
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    top: -31px;
+    position: relative;
+}   
+
+.in_header .logo {
+    display: flex;
+    display: -webkit-flex;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+}
+.in_header .title-text {
+    display: block;
+    margin-top: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+.in_header img{
+    margin-top: 12px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+#aisdeLeft {
+    display: block;
+    flex-grow: 0;
+    border: 3px solid red;
+    width: 300px;
+  }
+  #section {
+    flex-grow: 1;
+    border: 3px solid blue;
+  }
+  #aisdeRight {
+    flex-grow: 0;
+    border: 3px solid yellow;
+    width: 300px;
+  }
+  #article {
+    flex-grow: 1;
+    height: 800px;
+  }
+.in_index{
+    display: flex;
+}
+input[id="menuicon"] {display:none;}
+
+
+input[id="menuicon"] + label span {
+    display:block;
+    position:absolute;
+    width:100%;
+    height:5px;
+    border-radius:30px;
+    background:#000;
+    transition:all .35s;}
+
+input[id="menuicon"]:checked + label {z-index:2;}
+
+
+div[class="sidebar"] {
+    width: 300px;
+    height:100%;
+    background:gray;
+    top: 163px;
+    position:fixed;
+    left:-300px;
+    transition:all .35s;
+    border-right: 2px solid gray;
+}
+.sidebar div{
+    position: relative;
+}
+.sidebar .visit{
+    text-align: left;
+    display: block;
+    height: 50px;
+    background-color:gray;
+    width: 300px;
+    position: relative;
+    border: 1px solid black;
+}
+.sidebar .home{
+    margin-top: 100px;
+    text-align: left;
+    background-color: beige;
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+input[id="menuicon"]:checked + label + div {left:0;}
+
+main{
+    display: block;
+}
+div{
+    display: block;
+}
+.sidebar dl{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+.sidebar .visit .data_yesterday{
+    float: left;
+    background-color:red;
+}
+.sidebar .visit .data_today{
+    float: left;
+    background-color: yellow;
+}
+.sidebar .visit .total_visit{
+    float: left;
+    background-color:green;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+.area_search
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: white;
+    position: absolute;
+    transition:  0.5s;
+    overflow: hidden;
+    border: 1px solid #1eb49f;
+    right: 0;
+}
+
+.area_search.active{
+    width: 400px;
+    
+}
+.area_search .icon{
+    position: absolute;
+    left: 21px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.area_search .icon .search{
+    font-size: 21px;
+    cursor: pointer;
+    color:  black;
+}
+
+.area_search .input{
+
+    position: relative;
+    width: 300px;
+    height: 40px;
+    left: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.area_search .input input{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-size: 18px;
+    /*
+    outline: none; 넣을지 말지 고민중
+    */
+    padding: 0;
+}
+
+.area_search .input .clear
+{
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 20px;
+    color:gray;
+}
