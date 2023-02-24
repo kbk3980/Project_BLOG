@@ -101,7 +101,6 @@ html, body {
   }
   #article {
     flex-grow: 1;
-    height: 800px;
   }
 .in_index{
     display: flex;
@@ -196,6 +195,7 @@ div{
     overflow: hidden;
     border: 1px solid #1eb49f;
     right: 0;
+    top: 6px;
 }
 
 .area_search.active{
@@ -249,4 +249,35 @@ div{
     cursor: pointer;
     font-size: 20px;
     color:gray;
+}
+
+#aisdeLeft{
+    margin: 0 auto;
+}
+.profile{
+    width: 250px;
+    background-color: aqua;
+    margin: auto;
+}
+
+#write{
+    max-width: 600px;
+    background-color: beige;
+    position: relative;
+    margin: auto;    
+}
+
+li,ul{
+    list-style:none;
+}
+footer{
+    text-align: center;
+}
+.title{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
