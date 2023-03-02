@@ -10,7 +10,6 @@ h1{
 }
 
 #container li{
-    display: flex;
     list-style: none;
 }
 
@@ -22,11 +21,13 @@ ul li {
 	clear:both;
 }
 
-
+.join_link{
+	text-align: center;
+}
 
 input[type="text"], input[type="password"]{
 	float:left;
-	width:350px;
+	width: 350px;
 	height:35px;
 	border:1px solid #aaa;
 	border-radius:5px;
@@ -82,6 +83,8 @@ footer {
 
 div.accordion {
     margin: 0 auto;
+	width: 600px;
+	height: 116px;
 }
 
 div.accordion li img{

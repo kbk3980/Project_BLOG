@@ -44,11 +44,11 @@ window.onload=function(){
 }
 */
 
-var id = document.querySelector("#user-id")
-var id_pattern = new RegExp("^[a-z0-9][a-z0-9!-]{5,14}$")
+let id = document.querySelector("#user-id")
+let id_pattern = new RegExp("^[a-z0-9][a-z0-9!-]{5,14}$")
 
 
-var pw_compare = document.querySelector("#user-pwcheck")
+let pw_compare = document.querySelector("#user-pwcheck")
 
 id.onchange = checkid;
 

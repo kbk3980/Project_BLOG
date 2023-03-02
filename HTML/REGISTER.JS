@@ -1,8 +1,7 @@
-var id = document.querySelector("#user-id")
-var id_pattern = new RegExp("^[a-z0-9][a-z0-9!-]{5,14}$")
+let id = document.querySelector("#user-id")
+let id_pattern = new RegExp("^[a-z0-9][a-z0-9!-]{5,14}$")
 
-
-var pw_compare = document.querySelector("#user-pwcheck")
+let pw_compare = document.querySelector("#user-pwcheck")
 
 id.onchange = checkid;
 
@@ -24,8 +23,8 @@ function checkid()
   } 
 }
 
-var pw = document.querySelector("#user-pw")
-var pw_pattern = new RegExp("^[a-zA-Z](?=.*[a-zA-Z])(?=.*[0-9]).{7,14}$")
+let pw = document.querySelector("#user-pw")
+let pw_pattern = new RegExp("^[a-zA-Z](?=.*[a-zA-Z])(?=.*[0-9]).{7,14}$")
 /*       ("^(?=.*[0-9]+)[a-z][a-z0-9]{5,14}$") /*정규식 찾아봐도 안보여서 참고하면서 제작중  */
 pw.onchange = checkpw;
 function checkpw() 
@@ -36,8 +35,8 @@ function checkpw()
   } 
 }
 
-var nickname = document.querySelector("#user-name")
-var nickname_pattern= new RegExp("^[가-힣]{1,9}$")
+let nickname = document.querySelector("#user-name")
+let nickname_pattern= new RegExp("^[가-힣]{1,9}$")
 nickname.onchange= checkname;
 function checkname(){
 	 if (!nickname_pattern.test(nickname.value)) {

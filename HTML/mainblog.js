@@ -1,7 +1,8 @@
+const openmenu =document.getElementById("openmenu");
+const menuicon = document.getElementById("menuicon");
+let count= 0;
 
-let openmenu =document.getElementById("openmenu");
-let menuicon = document.getElementById("menuicon");
-var count= 0;
+
 openmenu.onclick = function (){
     if(count%2==1){
         openmenu.src="openmenu.png";
@@ -12,14 +13,14 @@ openmenu.onclick = function (){
     count++;
     }
 
-let search = document.querySelector(".search");
-let clear = document.querySelector(".clear");
+let btn_search = document.querySelector(".search");
+let btn_clear = document.querySelector(".clear");
 
-search.onclick=function(){
+btn_search.onclick=function(){
 {
     document.querySelector(".area_search").classList.toggle('active');
 }
-clear.onclick=function(){
+btn_clear.onclick=function(){
     {
         document.getElementById("search").value = "";
     }
@@ -36,3 +37,19 @@ else if(openmenu.src="cancel.png")
     openmenu.src="openmenu.png";
 }
 */
+
+const openbutton= document.getElementById("open");
+const modal = document.querySelector(".modal");
+const overlay = modal.querySelector(".modal_overlay");
+const closebtn = modal.querySelector(".asd");
+
+const openModal =() => {
+    modal.classList.remove("hidden");
+}
+
+const closeModal= () => {
+    modal.classList.add("hidden");
+}
+openbutton.addEventListener("click", openModal);
+overlay.addEventListener("click", closeModal);
+closebtn.addEventListener("click", closeModal);

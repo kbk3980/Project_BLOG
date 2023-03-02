@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로필 수정 페이지</title>
+    <link rel="stylesheet" href="profile.css">
+<body>
+    <div id="container">
+
+        <div id="nickname">
+            <label for="user-name" class="field">별명</label>
+            <input type="text"  id="user-name" required placeholder="2~10자이내로 입력해주세요." >
+        </div>
+         <div id="write">
+            <p>소개글 <textarea class="in_write" placeholder="200자이내로 입력해주세요." onkeyup="check_length"></textarea></p>
+         </div>
+
+
+
+        <button type="submit" onclick="location.href='mainblog.HTML' "id="wirte_btn">작성</button>
+        <button type="submit" onclick="location.href='mainblog.HTML' "id="cancel_btn">취소</button>
+
+
+    </div>
+    <script type="text/javascript" src="./profile.js"></script>
+</body>
+</html>

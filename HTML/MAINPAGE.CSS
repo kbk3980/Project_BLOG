@@ -39,6 +39,8 @@ ul {
   }
 
 body {
+   
+    background-repeat: no-repeat;
     background-image: url('./traverl1.png');
     background-size: cover;
 }

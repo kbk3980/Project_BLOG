@@ -1,0 +1,43 @@
+#nickname{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#user-name {
+    margin: 0 auto;
+	width:350px;
+	height:35px;
+	border:1px solid #aaa;
+	border-radius:5px;
+	padding:5px;
+	margin:5px 0;
+	text-indent: 10px;
+    margin-left: 16px;
+}
+
+.in_write{
+    width: 350px;
+    height: 350px;
+    resize: none;
+    border:1px solid #aaa;
+	border-radius:5px;
+	padding:5px;
+	margin:5px 0;
+    margin-left: 5px;
+}
+p{
+    display: inline-flex;
+}
+#write{
+    text-align: center;
+}
+
+body{
+    text-align: center;
+}
+#write_btn{
+    text-align: center;
+}
+#cancel_btn{
+    text-align: center;
+}
