@@ -59,7 +59,6 @@ html, body {
 }   
 
 .in_header .logo {
-    display: flex;
     display: -webkit-flex;
     width: 500px;
     height: 100%;
@@ -105,6 +104,7 @@ html, body {
 .in_index{
     display: flex;
 }
+
 input[id="menuicon"] {display:none;}
 
 
@@ -150,7 +150,7 @@ div[class="sidebar"] {
     height: 100px;
     width: 100px;
 }
-input[id="menuicon"]:checked + label + div {left:0;}
+input[id="menuicon"]:checked + label + div{left:0;}
 
 main{
     display: block;
@@ -363,3 +363,8 @@ body{
 #cancel_btn{
     text-align: center;
 }
+
+
+
+
+
