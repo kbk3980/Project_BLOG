@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+
+<html lang="ko" dir="ltr">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>메인 블로그창 임시만드는중</title>
+      
+      <link rel="stylesheet" href="hardblog.css">
+      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    </head>
+<body>
+<div class="sidebar">
+             <div class="logo-details">
+            <!--<i class='bx bxl-c-plus-plus icon'></i>-->
+               <i class='bx bx-spa'></i>
+               <div class="logo_name">배권 블로그</div>
+               <i class='bx bx-menu' id="btn" ></i>
+            </div>
+    <ul class="nav-list">
+               <li>
+                  <i class='bx bx-search' ></i>
+                  <input type="text" placeholder="Search...">
+                  <span class="tooltip">검색</span>
+               </li>
+      `   <!--
+          <li>
+          <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+          </li>
+           -->
+               <li>
+                 <a href="#">
+                     <i class='bx bx-user' ></i>
+                     <span class="links_name">유저 정보</span>
+                 </a>
+                 <span class="tooltip">유저 정보</span>
+               </li>
+               <li>
+                 <a href="#" class="cate-btn">
+                   <i class='bx bx-category' ></i>
+                   <span class="links_name">카테고리</span>
+                   <span class="fas fa-caret-down first"></span>
+                 </a>
+                 <ul class="cate-show">
+                    <li><a href="#">전체</a></li>
+                    <li><a href="#">코딩중</a></li>
+                    <li><a href="#">전체</a></li>
+                    <li><a href="#">코딩중</a></li>
+                    <li><a href="#">전체</a></li>
+                    <li><a href="#">코딩중</a></li>
+                    <li><a href="#">전체</a></li>
+                    <li><a href="#">코딩중</a></li>
+                    
+                 </ul>
+                 <span class="tooltip">카테고리</span>
+               </li>
+           <li>
+              <a href="#">
+                 <i class='bx bx-wink-tongue'></i>
+                 <span class="links_name">이웃</span>
+                 <span class="fas fa-caret-down second"></span>
+              </a>
+                 <span class="tooltip">이웃</span>
+          </li>
+           <li>
+              <a href="#">
+               <i class='bx bx-cog' ></i>
+              <span class="links_name">설정</span>
+              </a>
+             <span class="tooltip">설정</span>
+           </li>
+
+
+
+             <li class="profile">
+                <div class="profile-details">
+              <!--<img src="profile.jpg" alt="profileImg">-->
+                   <div class="name_job">
+                   <div class="name">배권</div>
+                   <div class="job">★ 접속중</div>
+                   </div>
+                   <ul>
+                      <li>
+                      <a href="#">
+                      <i class='bx bxl-instagram'></i>
+                      <span class="links_name"></span>
+                      </a>
+                      </li>
+                   </ul>
+          <!--
+            <ul>
+            <li>
+              <a href="#"><img src="./naver.png" alt="내가만든 로고"></a>
+            </li>
+           </ul>
+          -->
+                </div>
+                <a href="LOGIN.HTML"><i class='bx bx-log-out' id="log_out" ></i></a> 
+             </li>
+     </ul>
+  </div>
+
+
+
+
+  <section class="home-section">
+    <main id="main">   
+        <div class="in_header">
+            <h1 class="logo">
+                <!--<a href="#"><img src="./KBK.png" alt="내가만든 로고"> -->
+                <span class="title-text">KBK</span>
+                </a>
+            </h1>
+            <div class="btn_search">
+              <div class="area_search">  
+                  <div class="icon">
+                  <i class="search fa fa-search"></i>
+              </div>
+              <div class="input">
+                  <input type="text" placeholder="Search" id="search">
+                  <i class="clear fa fa-times"></i>   
+              </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="in_index">
+          
+            
+            <aside id="aisdeLeft">             
+               <div class="profile">
+                    <ul>
+                        <li>김배권</li>
+                        <li>kbk12345</li>
+                        <li>소개글입니다.</li>
+                    </ul>
+                    <button id="open">프로필 수정</button>
+                    <div class="modal hidden">
+                        <div class="modal_overlay"></div>
+                            <div class="modal_content">
+                                <div id="conta">
+                                    <div>
+                                        프로필 수정
+                                    </div>
+                                    <div id="nickname">
+                                        <label for="user-name" class="field">별명</label>
+                                        <input type="text"  id="user-name" required placeholder="2~10자이내로 입력해주세요." >
+                                    </div>
+                                    <div id="info">
+                                        <p>소개글 <textarea class="in_write" placeholder="200자이내로 입력해주세요."></textarea></p>
+                                    </div>
+                                    <button type="submit" onclick="location.href='mainblog.HTML' "id="wirte_btn">수정</button>
+                                    <button type="submit" onclick="location.href='mainblog.HTML' "id="cancel_btn">취소</button>
+                                </div>
+                                <button class="asd"><i class="fa-solid fa-xmark"></i></button>
+                            </div>
+                    </div> 
+                   
+               </div>
+            </aside>
+          
+
+            <div id="section">
+               <article id="article">
+                    <div class="title">
+                        <h1> 전체 글 </h1>
+                    </div>
+                    <div id="write">
+                    제목<br>
+                    코딩하는중<br>
+                    제주도 여행 2일차
+                    <br>
+                    <br>
+                    <br>
+                    제목<br>
+                    코딩하는중<br>
+                    제주도 여행 2일차
+                    <br>
+                    <br>
+                    <br>
+                    제목<br>
+                    코딩하는중<br>
+                    제주도 여행 2일차
+                    <br>
+                    <br>
+                    <br>
+                    제목<br>
+                    코딩하는중<br>
+                    제주도 여행 2일차
+                    <br>
+                    <br>
+                    <br>
+                    제목<br>
+                    코딩하는중<br>
+                    제주도 여행 2일차
+                     <br>
+                     <br>
+                     <br>
+                    제목<br>
+                    코딩하는중<br>
+                    제주도 여행 2일차<br>
+                    <br>
+                    <br>
+                    <br>
+                    제목<br>
+                    코딩하는중<br>
+                    제주도 여행 2일차<br>
+                    <br>
+                    <br>
+                    <br>
+                    제목<br>
+                    코딩하는중<br>
+                    제주도 여행 2일차<br>
+                    <br>
+                    <br>
+                    <br>
+                    제목<br>
+                    코딩하는중<br>
+                    제주도 여행 2일차<br>
+ 
+                    <div class="weare">
+                        <button type="submit" onclick="location.href='write.HTML'"id="write_botton">
+                        <i class="fa-solid fa-pen"></i>
+                        글 작성
+                        </button> 
+                    </div>
+                    </div>
+                </article>
+            </div>
+            
+                <aside id="aisdeRight">
+                <div class="nbh">
+                    이웃 리스트
+                    <br>김XX 배XX 권XX
+                </div>
+             </aside>
+        </div>
+    </main>
+    
+  </section>
+</body>
+<script type="text/javascript" src="./hardblog.js">
+  
+</script>
+</html>
