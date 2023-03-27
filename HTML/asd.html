@@ -1,0 +1,51 @@
+<form>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+  <span id="username-error" class="error-message"></span>
+  <br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+  <span id="password-error" class="error-message"></span>
+  <br>
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+
+const usernameInput = document.getElementById('username');
+
+const passwordInput = document.getElementById('password');
+
+const usernameRegex = /^[a-zA-Z0-9_-]{3,16}$/; // regular expression for validating usernames
+
+const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/; // regular expression for validating passwords
+
+usernameInput.addEventListener('focusout', function() {
+  if (!usernameRegex.test(usernameInput.value)) {
+    // display error message
+    const errorElement = document.getElementById('username-error');
+    errorElement.textContent = 'Username must be 3-16 characters long and can only contain letters, numbers, underscores, and hyphens.';
+    errorElement.style.display = 'block';
+  }
+});
+
+passwordInput.addEventListener('focusout', function() {
+  if (!passwordRegex.test(passwordInput.value)) {
+    // display error message
+    const errorElement = document.getElementById('password-error');
+    errorElement.textContent = 'Password must be at least 8 characters long and contain at least one letter and one number.';
+    errorElement.style.display = 'block';
+  }
+});
+
+usernameInput.addEventListener('input', function() {
+  const errorElement = document.getElementById('username-error');
+  errorElement.style.display = 'none';
+});
+
+passwordInput.addEventListener('input', function() {
+  const errorElement = document.getElementById('password-error');
+  errorElement.style.display = 'none';
+});
+
+</script>
