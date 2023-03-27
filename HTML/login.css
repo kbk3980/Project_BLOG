@@ -61,7 +61,7 @@ footer {
    }
 
 
- body #loginfrm ul li.error {
+ body #loginfrm ul li .error {
     margin-top: 10px ;
     color:#e7223d;
     text-align: left;
@@ -95,3 +95,8 @@ div.accordion li img{
     left: -30px;;
 }
 
+
+#id_error , #pw_error{
+	margin-left: 115px;
+	width: 500px;
+}
