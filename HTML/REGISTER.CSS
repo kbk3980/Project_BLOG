@@ -9,6 +9,9 @@ h1{
 	margin:0 auto;
 }
 
+#user-info div{
+	padding-left: 115px;
+}
 
 ul{
     list-style: none;
