@@ -21,7 +21,7 @@
                <div class="logo_name">배권 블로그</div>
                <i class='bx bx-menu' id="btn" ></i>
             </div>
-    <ul class="nav-list">
+    <div class="nav-list">
                <li>
                   <i class='bx bx-search' ></i>
                   <input type="text" placeholder="Search...">
@@ -63,11 +63,16 @@
                  <span class="tooltip">카테고리</span>
                </li>
            <li>
-              <a href="#">
+              <a href="#" class="neig-btn">
                  <i class='bx bx-wink-tongue'></i>
                  <span class="links_name">이웃</span>
                  <span class="fas fa-caret-down second"></span>
               </a>
+              <ul class="neig-show">
+                <li><a href="#">강아지</a></li>
+                <li><a href="#">고양이</a></li>           
+                <li><a href="#">진돗개</a></li>        
+             </ul>
                  <span class="tooltip">이웃</span>
           </li>
            <li>
@@ -78,34 +83,47 @@
              <span class="tooltip">설정</span>
            </li>
 
+           <li>
+            <a href="LOGIN.HTML">
+             <i class='bx bx-log-out' ></i>
+            <span class="links_name">로그아웃</span>
+            </a>
+           <span class="tooltip">로그아웃</span>
+         </li>
 
 
-             <li class="profile">
-                <div class="profile-details">
-              <!--<img src="profile.jpg" alt="profileImg">-->
-                   <div class="name_job">
-                   <div class="name">배권</div>
-                   <div class="job">★ 접속중</div>
-                   </div>
-                   <ul>
-                      <li>
-                      <a href="#">
-                      <i class='bx bxl-instagram'></i>
-                      <span class="links_name"></span>
-                      </a>
-                      </li>
-                   </ul>
-          <!--
-            <ul>
-            <li>
-              <a href="#"><img src="./naver.png" alt="내가만든 로고"></a>
-            </li>
+           
+            
+           
+     </div>
+     <div>
+         <li class="profile">
+        <div class="profile-details">
+      <!--<img src="profile.jpg" alt="profileImg">-->
+           <div class="name_job">
+           <div class="name">배권</div>
+           <div class="job">★ 접속중</div>
+           </div>
+           <ul>
+              <li>
+              <a href="#">
+              <i class='bx bxl-instagram'></i>
+              <span class="links_name"></span>
+              </a>
+              </li>
            </ul>
-          -->
-                </div>
-                <a href="LOGIN.HTML"><i class='bx bx-log-out' id="log_out" ></i></a> 
-             </li>
-     </ul>
+  <!--
+    <ul>
+    <li>
+      <a href="#"><img src="./naver.png" alt="내가만든 로고"></a>
+    </li>
+   </ul>
+  -->
+        </div>
+        <a href="LOGIN.HTML"><i class='bx bx-log-out' id="log_out" ></i></a> 
+     </li>
+     </div>
+    
   </div>
 
 
@@ -114,11 +132,11 @@
   <section class="home-section">
     <main id="main">   
         <div class="in_header">
-            <h1 class="logo">
+            <div class="logo">
                 <!--<a href="#"><img src="./KBK.png" alt="내가만든 로고"> -->
-                <span class="title-text">KBK</span>
+                <h1 class="title-text">KBK</h1>
                 </a>
-            </h1>
+            </div>
             <div class="btn_search">
               <div class="area_search">  
                   <div class="icon">
@@ -143,6 +161,15 @@
                         <li>소개글입니다.</li>
                     </ul>
                     <button id="open">프로필 수정</button>
+
+
+                    <div class="weare">
+                        <button type="submit" onclick="location.href='write.HTML'"id="write_botton">
+                        <i class="fa-solid fa-pen"></i>
+                        글 작성
+                        </button> 
+                    </div>
+
                     <div class="modal hidden">
                         <div class="modal_overlay"></div>
                             <div class="modal_content">
@@ -158,7 +185,7 @@
                                         <p>소개글 <textarea class="in_write" placeholder="200자이내로 입력해주세요."></textarea></p>
                                     </div>
                                     <button type="submit" onclick="location.href='mainblog.HTML' "id="wirte_btn">수정</button>
-                                    <button type="submit" onclick="location.href='mainblog.HTML' "id="cancel_btn">취소</button>
+                                <!-- <button type="submit" onclick="location.href='mainblog.HTML' "id="cancel_btn">취소</button>-->   
                                 </div>
                                 <button class="asd"><i class="fa-solid fa-xmark"></i></button>
                             </div>
@@ -173,73 +200,51 @@
                     <div class="title">
                         <h1> 전체 글 </h1>
                     </div>
-                    <div id="write">
-                    제목<br>
-                    코딩하는중<br>
-                    제주도 여행 2일차
-                    <br>
-                    <br>
-                    <br>
-                    제목<br>
-                    코딩하는중<br>
-                    제주도 여행 2일차
-                    <br>
-                    <br>
-                    <br>
-                    제목<br>
-                    코딩하는중<br>
-                    제주도 여행 2일차
-                    <br>
-                    <br>
-                    <br>
-                    제목<br>
-                    코딩하는중<br>
-                    제주도 여행 2일차
-                    <br>
-                    <br>
-                    <br>
-                    제목<br>
-                    코딩하는중<br>
-                    제주도 여행 2일차
-                     <br>
-                     <br>
-                     <br>
-                    제목<br>
-                    코딩하는중<br>
-                    제주도 여행 2일차<br>
-                    <br>
-                    <br>
-                    <br>
-                    제목<br>
-                    코딩하는중<br>
-                    제주도 여행 2일차<br>
-                    <br>
-                    <br>
-                    <br>
-                    제목<br>
-                    코딩하는중<br>
-                    제주도 여행 2일차<br>
-                    <br>
-                    <br>
-                    <br>
-                    제목<br>
-                    코딩하는중<br>
-                    제주도 여행 2일차<br>
- 
-                    <div class="weare">
-                        <button type="submit" onclick="location.href='write.HTML'"id="write_botton">
-                        <i class="fa-solid fa-pen"></i>
-                        글 작성
-                        </button> 
-                    </div>
-                    </div>
+                    <ul class="list">
+                    <li class="list-item">
+                        <div id="post1">
+                            <div class="categori">
+                                <a href="2.html">코딩중(카테고리)</a>
+                            </div>
+                            <a href="2.html" class="link_title">JavaScript 란?</a>
+                            HTML과 CSS로 만들어진 웹 페이지에 생동감을 불어넣기 위해 만들어진
+                             객체기반의 스크립트 프로그래밍 언어 따로 C, C++처럼 컴파일 없이 한줄 한줄 
+                             해석하며 바로 명령어를 실행하는 인터프리터 언어 HTML의....
+                            
+                       
+                        </div>
+                    </li>
+                    <li>
+                        <div id="post2">
+                            <div class="categori">
+                                <a href="2.html">코딩중(카테고리)</a>
+                            </div>
+                            <a href="2.html" class="link_title"> HTML란?</a>
+                            HTML 은 Hyper Text Markup Language 약어로 HyperText(웹 페이지에서 다른 페이지로 이동할 수 있도록 하는 것) 기능을 가진 문서를 만드는 언어입니다. 다시 말해, 구조를 설계할 때 사용되는 언어로 hyper link 시스템을 가지고 있으며, 흔히 말하는 웹 페이지를 위한 마크업 언어라고 할 수 있습니다.
+     
+                       
+                        </div>
+                    </li>
+                    <li>
+                        <div id="post3">
+                            <div class="categori">
+                                <a href="2.html">코딩중(카테고리)</a>
+                            </div>
+                            <a href="2.html" class="link_title"> HTML란?</a>
+                            CSS(Cascading Style Sheet)는 마크업 언어가 실제 표시되는 방법을 기술하는 언어로, HTML 과 XHTML 에 주로 쓰이며, XML에서도 사용할 수 있습니다.
+    
+                            다시 말해, HTML 문서를 스타일링 하는 언어( W3C 의 표준)로 HTML 문서에서 link 요소를 사용해 CSS 파일을 읽어들이면 HTML 문서의 구조를 CSS를 통해 스타일링 하게 됩니다.
+                       
+                        </div>
+                    </li>
+                    </ul>
+                   
                 </article>
             </div>
             
                 <aside id="aisdeRight">
                 <div class="nbh">
-                    이웃 리스트
-                    <br>김XX 배XX 권XX
+    
                 </div>
              </aside>
         </div>

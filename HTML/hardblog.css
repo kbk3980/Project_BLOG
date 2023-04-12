@@ -263,16 +263,18 @@
     display: block;
     flex-grow: 0;
     border: 3px solid red;
-    width: 300px;
+    min-width: 300px;
   }
   #section {
+    padding: 20px;
     flex-grow: 1;
     border: 3px solid blue;
+    min-height: 800px;
   }
   #aisdeRight {
     flex-grow: 0;
     border: 3px solid yellow;
-    width: 300px;
+    min-width: 300px;
   }
   #article {
     flex-grow: 1;
@@ -338,7 +340,8 @@
     margin-left: 16px;
 }
 .weare{
-    text-align: right;
+    position: relative;
+    text-align: left;
 }
 .in_write{
     width: 350px;
@@ -353,8 +356,11 @@
 p{
     display: inline-flex;
 }
-#write{
+#post1,#post2,#post3{
+  border: 1px solid black;
+  margin: 0 40px;
    text-align: left;
+   margin-top: 50px;
 }
 
 body{
@@ -482,10 +488,18 @@ body{
   right: 20px;
   transform: translateY(-50%);
   transform: 0.4s;
-display: none;
+  display: none;
 }
+.nav-list li a .second.rotate{
+  transform: translateY(-50%) rotate(-180deg);
+  color: red;
+  position: relative;
+  top:8px;
+  left: 107px;
+  display: block;
 
-.nav-list li a .first.rotate{
+}
+.nav-list li a .first.rotate {
   transform: translateY(-50%) rotate(-180deg);
   color: red;
   position: relative;
@@ -495,14 +509,14 @@ display: none;
 
 }
 
-.nav-list .cate-show{
+.nav-list .cate-show, .nav-list .neig-show.show{
   padding-left: 50px;
 }
 .nav-list li .cate-show.show{
   display: block;
 }
 
-.nav-list li .friend-show.show1{
+.nav-list li .neig-show.show{
   display: block;
 }
 
@@ -521,4 +535,25 @@ overflow-x: hidden;
 }
 ::-webkit-scrollbar-thumb{
   background:#fff;
+}
+
+#main .profile ul li{
+  list-style: none;
+}
+
+ul,li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color:  black;
+}
+
+.categori{
+  margin-bottom: 20px;
+}
+
+.link_title{
+  display: block;
 }
