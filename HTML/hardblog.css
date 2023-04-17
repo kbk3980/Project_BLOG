@@ -551,9 +551,34 @@ a{
 }
 
 .categori{
-  margin-bottom: 20px;
+  margin: 5px 0px;
 }
 
 .link_title{
   display: block;
 }
+
+
+.list .pic img{
+  width: 200px;
+  height: 200px;
+  margin-right: 12px;
+}
+.list .big_content{
+  display: flex;
+}
+
+
+
+
+
+
+
+$(document).ready(function(){
+  $('.content').click(function(){
+    $('.content').toggleClass("heart-active")
+    $('.text').toggleClass("heart-active")
+    $('.numb').toggleClass("heart-active")
+    $('.heart').toggleClass("heart-active")
+  });
+});

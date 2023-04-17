@@ -14,6 +14,8 @@ let neigbtn = document.getElementsByClassName("neig-btn")[0];
     
   }
 })*/
+
+
 neigbtn.addEventListener("click",function(){
   if(sidebar.classList.contains("open")){
    {
@@ -127,3 +129,7 @@ $('.friend-btn').click(function(){
 });
 
 */
+
+
+
+
