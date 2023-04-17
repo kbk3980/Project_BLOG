@@ -10,7 +10,7 @@
       
       <link rel="stylesheet" href="2.css">
       <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     </head>
 <body>
@@ -221,9 +221,11 @@
                              해석하며 바로 명령어를 실행하는 인터프리터 언어 HTML의
                              특정 요소를 선택하여 다양한 이벤트 ( 마우스 클릭, 키보드 입력 등 )에
                              따라 어떤 동작을 하도록 기능을 넣을 수 있다.
-                            <div class="heart">
-                                공감 버튼
-                            </div>
+                             <div class="heart-container">
+                                <Button onclick="Toggle1()" id="btnh1" class="btn"><i class="fa-solid fa-heart"></i></Button>
+                                <span id="number">0</span>
+                             </div>
+            
                             <div class="comment_ppl">
                                 댓글 0
                             </div>
@@ -249,7 +251,7 @@
     
   </section>
 </body>
-<script type="text/javascript" src="./hardblog.js">
+<script type="text/javascript" src="./2.js">
   
 </script>
 </html>

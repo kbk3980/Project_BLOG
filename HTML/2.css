@@ -566,3 +566,41 @@ div .comment_ppl{
 .comment p{
   display: block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btns{
+  position: absolute;
+  top: 216px;
+  left: 328px;
+  display: flex;
+}
+
+.btn{
+  background: transparent;
+  border: none;
+  font-size: 25px;
+  outline: none;
+  color: white;
+
+}
+
+.btn i:hover{
+  cursor: pointer;
+}
+
+
+.fa-heart {
+  background-color: beige;
+}
